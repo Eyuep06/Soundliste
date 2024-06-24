@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+}
+
+table {
+    width: 80%;
+    background-color: #000000;
+    border-collapse: collapse;
+    border-width: 1px;
+    border-color: #ffffff;
+    border-style: solid;
+    color:#ffffff;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    font: 1em sans-serif;
+
+}
+
+td, th {
+    border-width: 1px;
+    border-color: #ffffff;
+    border-style: solid;
+    padding: 3px;
+   
+}
+
+button {
+    margin:auto;
+    display:block;    
+    color: #000000;
+    background-color: #ffffff;
+    border: solid black;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+button:hover  {
+    color: white;
+    background-color: #000000;
+    border-color: #ffffff;
+    border-style: solid;
+}
