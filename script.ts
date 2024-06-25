@@ -17,6 +17,21 @@ namespace Soundliste {
     let ioniq6_aussteigen: HTMLElement = document.getElementById("aussteigen_IONIQ6") as HTMLElement;
     let ioniq6_kofferraum: HTMLElement = document.getElementById("kofferraum_schliessen_IONIQ6") as HTMLElement;
 
+    let polestar2_FZ_ein: HTMLElement = document.getElementById("FZ_einschalten_Polestar2") as HTMLElement;
+    let polestar2_tippen: HTMLElement = document.getElementById("tippen_Polestar2") as HTMLElement;
+    let polestar2_beschleunigung_bremsung: HTMLElement = document.getElementById("beschleunigung_bremsung_Polestar2") as HTMLElement;
+    let polestar2_blinker: HTMLElement = document.getElementById("blinker_Polestar2") as HTMLElement;
+    let polestar2_sprachassistent: HTMLElement = document.getElementById("sprachassistent_Polestar2") as HTMLElement;
+    let polestar2_anschnallen: HTMLElement = document.getElementById("anschnallen_Polestar2") as HTMLElement;
+    let polestar2_parksensorV: HTMLElement = document.getElementById("parksensorV_Polestar2") as HTMLElement;
+    let polestar2_parksensorH: HTMLElement = document.getElementById("parksensorH_Polestar2") as HTMLElement;
+    let polestar2_benachrichtigung: HTMLElement = document.getElementById("benachrichtigung_Polestar2") as HTMLElement;
+    let polestar2_anruf: HTMLElement = document.getElementById("anruf_Polestar2") as HTMLElement;
+
+
+
+
+
 
 
 
@@ -153,9 +168,86 @@ namespace Soundliste {
     }
 
 
-// Ab hier die Polestar 2 Sounds. Oben noch Variablen deklarieren
+// Ab hier Polestar 2    
+    polestar2_FZ_ein.addEventListener("click", polestar1);
+    
+    function polestar1(): void {
+        let polestar1: HTMLAudioElement = new Audio ("Polestar/Fahrzeug_starten.wav");
+        polestar1.play();
+    }
 
 
+    polestar2_tippen.addEventListener("click", polestar2);
+    
+    function polestar2(): void {
+        let polestar2: HTMLAudioElement = new Audio ("Polestar/Tippen.wav");
+        polestar2.play();
+    }
+
+
+    polestar2_beschleunigung_bremsung.addEventListener("click", polestar3);
+    
+    function polestar3(): void {
+        let polestar3: HTMLAudioElement = new Audio ("Polestar/Beschleinigung_Abremsung_ohne_NC.wav");
+        polestar3.play();
+    }
+
+
+    polestar2_blinker.addEventListener("click", polestar4);
+    
+    function polestar4(): void {
+        let polestar4: HTMLAudioElement = new Audio ("Polestar/Blinker.wav");
+        polestar4.play();
+    }
+
+
+    polestar2_sprachassistent.addEventListener("click", polestar5);
+    
+    function polestar5(): void {
+        let polestar5: HTMLAudioElement = new Audio ("Polestar/Sprachassistent_google.wav");
+        polestar5.play();
+    }
+
+
+    polestar2_anschnallen.addEventListener("click", polestar6);
+    
+    function polestar6(): void {
+        let polestar6: HTMLAudioElement = new Audio ("Polestar/Anschnallen.wav");
+        polestar6.play();
+    }
+
+
+    polestar2_parksensorV.addEventListener("click", polestar7);
+    
+    function polestar7(): void {
+        let polestar7: HTMLAudioElement = new Audio ("Polestar/Parksensor_vorne.wav");
+        polestar7.play();
+    }
+
+
+    polestar2_parksensorH.addEventListener("click", polestar8);
+    
+    function polestar8(): void {
+        let polestar8: HTMLAudioElement = new Audio ("Polestar/Parksensor_hinten.wav");
+        polestar8.play();
+    }
+
+
+    polestar2_benachrichtigung.addEventListener("click", polestar9);
+    
+    function polestar9(): void {
+        let polestar9: HTMLAudioElement = new Audio ("Polestar/Benachrichtigung.wav");
+        polestar9.play();
+    }
+
+
+    polestar2_anruf.addEventListener("click", polestar10);
+    
+    function polestar10(): void {
+        let polestar10: HTMLAudioElement = new Audio ("Polestar/Anruf.wav");
+        polestar10.play();
+    }
+    
 
 
 
