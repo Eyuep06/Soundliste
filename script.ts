@@ -1,10 +1,12 @@
 namespace Soundliste {
+    // IONIQ 6 Var
     let ioniq6_FZ_ein: HTMLElement = document.getElementById("FZ_einschalten_IONIQ6") as HTMLElement;
     let ioniq6_FZ_aus: HTMLElement = document.getElementById("FZ_ausschalten_IONIQ6") as HTMLElement;
     let ioniq6_tippen: HTMLElement = document.getElementById("tippen_IONIQ6") as HTMLElement;
     let ioniq6_beschleunigung_bremsung: HTMLElement = document.getElementById("beschleunigung_bremsung_IONIQ6") as HTMLElement;
     let ioniq6_blinker: HTMLElement = document.getElementById("blinker_IONIQ6") as HTMLElement;
     let ioniq6_sprachassistent: HTMLElement = document.getElementById("sprachassistent_IONIQ6") as HTMLElement;
+    let ioniq6_sprachassistent_aus: HTMLElement = document.getElementById("sprachassistent_aus_IONIQ6") as HTMLElement;
     let ioniq6_anschnallen: HTMLElement = document.getElementById("anschnallen_IONIQ6") as HTMLElement;
     let ioniq6_parksensorV: HTMLElement = document.getElementById("parksensorV_IONIQ6") as HTMLElement;
     let ioniq6_parksensorH: HTMLElement = document.getElementById("parksensorH_IONIQ6") as HTMLElement;
@@ -16,26 +18,43 @@ namespace Soundliste {
     let ioniq6_tempolimit: HTMLElement = document.getElementById("tempolimit_ueberschritten_IONIQ6") as HTMLElement;
     let ioniq6_aussteigen: HTMLElement = document.getElementById("aussteigen_IONIQ6") as HTMLElement;
     let ioniq6_kofferraum: HTMLElement = document.getElementById("kofferraum_schliessen_IONIQ6") as HTMLElement;
-
+    // Polestar 2 Var
     let polestar2_FZ_ein: HTMLElement = document.getElementById("FZ_einschalten_Polestar2") as HTMLElement;
     let polestar2_tippen: HTMLElement = document.getElementById("tippen_Polestar2") as HTMLElement;
     let polestar2_beschleunigung_bremsung: HTMLElement = document.getElementById("beschleunigung_bremsung_Polestar2") as HTMLElement;
     let polestar2_blinker: HTMLElement = document.getElementById("blinker_Polestar2") as HTMLElement;
     let polestar2_sprachassistent: HTMLElement = document.getElementById("sprachassistent_Polestar2") as HTMLElement;
+    let polestar2_sprachassistent_aus: HTMLElement = document.getElementById("sprachassistent_aus_Polestar2") as HTMLElement;
     let polestar2_anschnallen: HTMLElement = document.getElementById("anschnallen_Polestar2") as HTMLElement;
     let polestar2_parksensorV: HTMLElement = document.getElementById("parksensorV_Polestar2") as HTMLElement;
     let polestar2_parksensorH: HTMLElement = document.getElementById("parksensorH_Polestar2") as HTMLElement;
     let polestar2_benachrichtigung: HTMLElement = document.getElementById("benachrichtigung_Polestar2") as HTMLElement;
     let polestar2_anruf: HTMLElement = document.getElementById("anruf_Polestar2") as HTMLElement;
+    // EQE Var
+    let EQE_FZ_ein: HTMLElement = document.getElementById("FZ_einschalten_EQE") as HTMLElement;
+    let EQE_FZ_aus: HTMLElement = document.getElementById("FZ_ausschalten_EQE") as HTMLElement;
+    let EQE_tippen: HTMLElement = document.getElementById("tippen_EQE") as HTMLElement;
+    let EQE_scrollen: HTMLElement = document.getElementById("scrollen_EQE") as HTMLElement;
+    let EQE_scrollen_unternav: HTMLElement = document.getElementById("scrollen_Unternavigation_EQE") as HTMLElement;
+    let EQE_toggle: HTMLElement = document.getElementById("toggle_EQE") as HTMLElement;
+    let EQE_beschleunigung_bremsung: HTMLElement = document.getElementById("beschleunigung_bremsung_EQE") as HTMLElement;
+    let EQE_blinker: HTMLElement = document.getElementById("blinker_EQE") as HTMLElement;
+    let EQE_sprachassistent: HTMLElement = document.getElementById("sprachassistent_EQE") as HTMLElement;
+    let EQE_sprachassistent_aus: HTMLElement = document.getElementById("sprachassistent_aus_EQE") as HTMLElement;
+    let EQE_anschnallen: HTMLElement = document.getElementById("anschnallen_EQE") as HTMLElement;
+    let EQE_parksensorV: HTMLElement = document.getElementById("parksensorV_EQE") as HTMLElement;
+    let EQE_parksensorH: HTMLElement = document.getElementById("parksensorH_EQE") as HTMLElement;
+    let EQE_offeneTuere: HTMLElement = document.getElementById("offeneTuere_EQE") as HTMLElement;
+    let EQE_benachrichtigung: HTMLElement = document.getElementById("benachrichtigung_EQE") as HTMLElement;
+    let EQE_meldung: HTMLElement = document.getElementById("meldung_EQE") as HTMLElement;
+    let EQE_anruf: HTMLElement = document.getElementById("anruf_EQE") as HTMLElement;
+    let EQE_tempolimit: HTMLElement = document.getElementById("tempolimit_ueberschritten_EQE") as HTMLElement;
+    let EQE_einsteigen: HTMLElement = document.getElementById("einsteigen_EQE") as HTMLElement;
+    let EQE_aussteigen: HTMLElement = document.getElementById("aussteigen_EQE") as HTMLElement;
 
 
 
-
-
-
-
-
-
+    //IONIQ 6 Func
     ioniq6_FZ_ein.addEventListener("click", ioniq1);
     
     function ioniq1(): void {
@@ -81,6 +100,14 @@ namespace Soundliste {
     function ioniq6(): void {
         let ioniq6: HTMLAudioElement = new Audio ("IONIQ6/Sprachassistent.wav");
         ioniq6.play();
+    }
+
+
+    ioniq6_sprachassistent_aus.addEventListener("click", ioniq6_1);
+
+    function ioniq6_1(): void {
+        let ioniq6_1: HTMLAudioElement = new Audio ("IONIQ6/Sprachassistent_aus.wav");
+        ioniq6_1.play();
     }
 
 
@@ -168,7 +195,7 @@ namespace Soundliste {
     }
 
 
-// Ab hier Polestar 2    
+    // Polestar 2 Func    
     polestar2_FZ_ein.addEventListener("click", polestar1);
     
     function polestar1(): void {
@@ -206,6 +233,14 @@ namespace Soundliste {
     function polestar5(): void {
         let polestar5: HTMLAudioElement = new Audio ("Polestar/Sprachassistent_google.wav");
         polestar5.play();
+    }
+
+
+    polestar2_sprachassistent_aus.addEventListener("click", polestar5_1);
+    
+    function polestar5_1(): void {
+        let polestar5_1: HTMLAudioElement = new Audio ("Polestar/Sprachassistent_google_aus.wav");
+        polestar5_1.play();
     }
 
 
@@ -249,15 +284,165 @@ namespace Soundliste {
     }
     
 
+    // EQE Funcs
+    EQE_FZ_ein.addEventListener("click", EQE1);
+    
+    function EQE1(): void {
+        let EQE1: HTMLAudioElement = new Audio ("EQE/Startsound.wav");
+        EQE1.play();
+    }
 
 
+    EQE_FZ_aus.addEventListener("click", EQE2);
+    
+    function EQE2(): void {
+        let EQE2: HTMLAudioElement = new Audio ("EQE/Aus_Sound.wav");
+        EQE2.play();
+    }
+    
+
+    EQE_tippen.addEventListener("click", EQE3);
+    
+    function EQE3(): void {
+        let EQE3: HTMLAudioElement = new Audio ("EQE/Tippen.wav");
+        EQE3.play();
+    }    
 
 
+    EQE_scrollen.addEventListener("click", EQE4);
+    
+    function EQE4(): void {
+        let EQE4: HTMLAudioElement = new Audio ("EQE/Scrollen.wav");
+        EQE4.play();
+    }
 
 
+    EQE_scrollen_unternav.addEventListener("click", EQE5);
+    
+    function EQE5(): void {
+        let EQE5: HTMLAudioElement = new Audio ("EQE/Scrollen_Unterkategorie.wav");
+        EQE5.play();
+    }
 
 
+    EQE_toggle.addEventListener("click", EQE6);
+    
+    function EQE6(): void {
+        let EQE6: HTMLAudioElement = new Audio ("EQE/Toggle.wav");
+        EQE6.play();
+    }
 
+
+    EQE_beschleunigung_bremsung.addEventListener("click", EQE7);
+    
+    function EQE7(): void {
+        let EQE7: HTMLAudioElement = new Audio ("EQE/Beschleunigung_Abremsung.wav");
+        EQE7.play();
+    }
+
+
+    EQE_blinker.addEventListener("click", EQE8);
+    
+    function EQE8(): void {
+        let EQE8: HTMLAudioElement = new Audio ("EQE/Blinker.wav");
+        EQE8.play();
+    }
+
+
+    EQE_sprachassistent.addEventListener("click", EQE9);
+    
+    function EQE9(): void {
+        let EQE9: HTMLAudioElement = new Audio ("EQE/Sprachassistent_an.wav");
+        EQE9.play();
+    }
+
+
+    EQE_sprachassistent_aus.addEventListener("click", EQE10);
+    
+    function EQE10(): void {
+        let EQE10: HTMLAudioElement = new Audio ("EQE/Sprachassistent_aus.wav");
+        EQE10.play();
+    }
+
+
+    EQE_anschnallen.addEventListener("click", EQE11);
+    
+    function EQE11(): void {
+        let EQE11: HTMLAudioElement = new Audio ("EQE/Anschnallen.wav");
+        EQE11.play();
+    }
+
+
+    EQE_parksensorV.addEventListener("click", EQE12);
+    
+    function EQE12(): void {
+        let EQE12: HTMLAudioElement = new Audio ("EQE/Parksensor_V.wav");
+        EQE12.play();
+    }
+
+
+    EQE_parksensorH.addEventListener("click", EQE13);
+    
+    function EQE13(): void {
+        let EQE13: HTMLAudioElement = new Audio ("EQE/Parksensor_H.wav");
+        EQE13.play();
+    }
+
+
+    EQE_offeneTuere.addEventListener("click", EQE14);
+    
+    function EQE14(): void {
+        let EQE14: HTMLAudioElement = new Audio ("EQE/Offene_Tuere.wav");
+        EQE14.play();
+    }
+
+
+    EQE_benachrichtigung.addEventListener("click", EQE15);
+    
+    function EQE15(): void {
+        let EQE15: HTMLAudioElement = new Audio ("EQE/Benachrichtigung.wav");
+        EQE15.play();
+    }
+
+
+    EQE_meldung.addEventListener("click", EQE16);
+    
+    function EQE16(): void {
+        let EQE16: HTMLAudioElement = new Audio ("EQE/Meldung_BatterieFastLeer.wav");
+        EQE16.play();
+    }
+
+
+    EQE_anruf.addEventListener("click", EQE17);
+    
+    function EQE17(): void {
+        let EQE17: HTMLAudioElement = new Audio ("EQE/Anruf.wav");
+        EQE17.play();
+    }
+
+
+    EQE_tempolimit.addEventListener("click", EQE18);
+    
+    function EQE18(): void {
+        let EQE18: HTMLAudioElement = new Audio ("EQE/Geschwindigkeit_Hinweis.wav");
+        EQE18.play();
+    }
+
+
+    EQE_einsteigen.addEventListener("click", EQE19);
+    
+    function EQE19(): void {
+        let EQE19: HTMLAudioElement = new Audio ("EQE/Earcon_Einsteigen.wav");
+        EQE19.play();
+    }
+
+
+    EQE_aussteigen.addEventListener("click", EQE20);
+    
+    function EQE20(): void {
+        let EQE20: HTMLAudioElement = new Audio ("EQE/Earcon_Aussteigen.wav");
+        EQE20.play();
+    }
 
 
 
