@@ -53,6 +53,10 @@ var Soundliste;
     let EQE_tempolimit = document.getElementById("tempolimit_ueberschritten_EQE");
     let EQE_einsteigen = document.getElementById("einsteigen_EQE");
     let EQE_aussteigen = document.getElementById("aussteigen_EQE");
+    // Model 3 Var
+    let Model3_tempolimit = document.getElementById("tempolimit_ueberschritten_Model3");
+    let Model3_anschnallen = document.getElementById("anschnallen_Model3");
+    let Model3_beschleunigung = document.getElementById("beschleunigung_bremsung_Model3");
     //IONIQ 6 Func
     ioniq6_FZ_ein.addEventListener("click", ioniq1);
     function ioniq1() {
@@ -297,6 +301,22 @@ var Soundliste;
     function EQE20() {
         let EQE20 = new Audio("EQE/Earcon_Aussteigen.wav");
         EQE20.play();
+    }
+    //Model 3 Func
+    Model3_anschnallen.addEventListener("click", Model3_1);
+    function Model3_1() {
+        let Model3_1 = new Audio("Tesla Model 3/seatbelt_front_chime.mp3");
+        Model3_1.play();
+    }
+    Model3_tempolimit.addEventListener("click", Model3_2);
+    function Model3_2() {
+        let Model3_2 = new Audio("Tesla Model 3/speed_assist_warning.mp3");
+        Model3_2.play();
+    }
+    Model3_beschleunigung.addEventListener("click", Model3_3);
+    function Model3_3() {
+        let Model3_3 = new Audio("Tesla Model 3/high_pitched_noise_when_accelerating.mp4");
+        Model3_3.play();
     }
 })(Soundliste || (Soundliste = {}));
 //# sourceMappingURL=script.js.map
