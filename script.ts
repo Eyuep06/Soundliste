@@ -45,7 +45,6 @@ namespace Soundliste {
     let EQE_parksensorH: HTMLElement = document.getElementById("parksensorH_EQE") as HTMLElement;
     let EQE_offeneTuere: HTMLElement = document.getElementById("offeneTuere_EQE") as HTMLElement;
     let EQE_benachrichtigung: HTMLElement = document.getElementById("benachrichtigung_EQE") as HTMLElement;
-    let EQE_meldung: HTMLElement = document.getElementById("meldung_EQE") as HTMLElement;
     let EQE_anruf: HTMLElement = document.getElementById("anruf_EQE") as HTMLElement;
     let EQE_tempolimit: HTMLElement = document.getElementById("tempolimit_ueberschritten_EQE") as HTMLElement;
     let EQE_einsteigen: HTMLElement = document.getElementById("einsteigen_EQE") as HTMLElement;
@@ -392,14 +391,6 @@ namespace Soundliste {
     function EQE15(): void {
         let EQE15: HTMLAudioElement = new Audio ("EQE/Benachrichtigung.wav");
         EQE15.play();
-    }
-
-
-    EQE_meldung.addEventListener("click", EQE16);
-    
-    function EQE16(): void {
-        let EQE16: HTMLAudioElement = new Audio ("EQE/Meldung_BatterieFastLeer.wav");
-        EQE16.play();
     }
 
 
