@@ -50,13 +50,7 @@ namespace Soundliste {
     let EQE_tempolimit: HTMLElement = document.getElementById("tempolimit_ueberschritten_EQE") as HTMLElement;
     let EQE_einsteigen: HTMLElement = document.getElementById("einsteigen_EQE") as HTMLElement;
     let EQE_aussteigen: HTMLElement = document.getElementById("aussteigen_EQE") as HTMLElement;
-    // Model 3 Var
-    let Model3_tempolimit: HTMLElement = document.getElementById("tempolimit_ueberschritten_Model3") as HTMLElement;
-    let Model3_anschnallen: HTMLElement = document.getElementById("anschnallen_Model3") as HTMLElement;
-    let Model3_beschleunigung: HTMLElement = document.getElementById("beschleunigung_bremsung_Model3") as HTMLElement;
-
-
-
+   
     //IONIQ 6 Func
     ioniq6_FZ_ein.addEventListener("click", ioniq1);
     
@@ -441,28 +435,5 @@ namespace Soundliste {
     }
 
 
-    //Model 3 Func
-    Model3_anschnallen.addEventListener("click", Model3_1);
-    
-    function Model3_1(): void {
-        let Model3_1: HTMLAudioElement = new Audio ("Tesla Model 3/seatbelt_front_chime.mp3");
-        Model3_1.play();
-    }
-
-
-    Model3_tempolimit.addEventListener("click", Model3_2);
-
-    function Model3_2(): void {
-        let Model3_2: HTMLAudioElement = new Audio ("Tesla Model 3/speed_assist_warning.mp3");
-        Model3_2.play();
-    }
-
-
-    Model3_beschleunigung.addEventListener("click", Model3_3);
-    
-    function Model3_3(): void {
-        let Model3_3: HTMLAudioElement = new Audio ("Tesla Model 3/high_pitched_noise_when_accelerating.mp4");
-        Model3_3.play();
-    }
-
+ 
 }
