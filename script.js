@@ -19,7 +19,6 @@ var Soundliste;
     let ioniq6_anruf = document.getElementById("anruf_IONIQ6");
     let ioniq6_tempolimit = document.getElementById("tempolimit_ueberschritten_IONIQ6");
     let ioniq6_aussteigen = document.getElementById("aussteigen_IONIQ6");
-    let ioniq6_kofferraum = document.getElementById("kofferraum_schliessen_IONIQ6");
     // Polestar 2 Var
     let polestar2_FZ_ein = document.getElementById("FZ_einschalten_Polestar2");
     let polestar2_tippen = document.getElementById("tippen_Polestar2");
@@ -139,11 +138,6 @@ var Soundliste;
     function ioniq15() {
         let ioniq15 = new Audio("IONIQ6/Aussteigen.wav");
         ioniq15.play();
-    }
-    ioniq6_kofferraum.addEventListener("click", ioniq16);
-    function ioniq16() {
-        let ioniq16 = new Audio("IONIQ6/Kofferraum_schliessen.wav");
-        ioniq16.play();
     }
     // Polestar 2 Func    
     polestar2_FZ_ein.addEventListener("click", polestar1);

@@ -17,7 +17,6 @@ namespace Soundliste {
     let ioniq6_anruf: HTMLElement = document.getElementById("anruf_IONIQ6") as HTMLElement;
     let ioniq6_tempolimit: HTMLElement = document.getElementById("tempolimit_ueberschritten_IONIQ6") as HTMLElement;
     let ioniq6_aussteigen: HTMLElement = document.getElementById("aussteigen_IONIQ6") as HTMLElement;
-    let ioniq6_kofferraum: HTMLElement = document.getElementById("kofferraum_schliessen_IONIQ6") as HTMLElement;
     // Polestar 2 Var
     let polestar2_FZ_ein: HTMLElement = document.getElementById("FZ_einschalten_Polestar2") as HTMLElement;
     let polestar2_tippen: HTMLElement = document.getElementById("tippen_Polestar2") as HTMLElement;
@@ -190,13 +189,6 @@ namespace Soundliste {
         ioniq15.play();
     }
 
-
-    ioniq6_kofferraum.addEventListener("click", ioniq16);
-
-    function ioniq16(): void {
-        let ioniq16: HTMLAudioElement = new Audio ("IONIQ6/Kofferraum_schliessen.wav");
-        ioniq16.play();
-    }
 
 
     // Polestar 2 Func    
