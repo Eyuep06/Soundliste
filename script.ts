@@ -10,8 +10,6 @@ namespace Soundliste {
     let ioniq6_anschnallen: HTMLElement = document.getElementById("anschnallen_IONIQ6") as HTMLElement;
     let ioniq6_parksensorV: HTMLElement = document.getElementById("parksensorV_IONIQ6") as HTMLElement;
     let ioniq6_parksensorH: HTMLElement = document.getElementById("parksensorH_IONIQ6") as HTMLElement;
-    let ioniq6_RWG: HTMLElement = document.getElementById("RWG_IONIQ6") as HTMLElement;
-    let ioniq6_P_einlegen: HTMLElement = document.getElementById("P_einlegen_IONIQ6") as HTMLElement;
     let ioniq6_offeneTuere: HTMLElement = document.getElementById("offeneTuere_IONIQ6") as HTMLElement;
     let ioniq6_benachrichtigung: HTMLElement = document.getElementById("benachrichtigung_IONIQ6") as HTMLElement;
     let ioniq6_anruf: HTMLElement = document.getElementById("anruf_IONIQ6") as HTMLElement;
@@ -125,22 +123,6 @@ namespace Soundliste {
 
     ioniq6_parksensorH.addEventListener("click", ioniq8) 
     //IONIQ 6 hat keine unterchiedlichen Parksensor-Töne, deshalb selbe Funktion für vorne und hinten
-
-
-    ioniq6_RWG.addEventListener("click", ioniq9);
-
-    function ioniq9(): void {
-        let ioniq9: HTMLAudioElement = new Audio ("IONIQ6/RW_Gang.wav");
-        ioniq9.play();
-    }
-
-
-    ioniq6_P_einlegen.addEventListener("click", ioniq10);
-
-    function ioniq10(): void {
-        let ioniq10: HTMLAudioElement = new Audio ("IONIQ6/P_Gang.wav");
-        ioniq10.play();
-    }
 
     
     ioniq6_offeneTuere.addEventListener("click", ioniq11);
