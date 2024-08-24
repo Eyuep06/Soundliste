@@ -17,6 +17,8 @@ var Soundliste;
     let ioniq6_anruf = document.getElementById("anruf_IONIQ6");
     let ioniq6_tempolimit = document.getElementById("tempolimit_ueberschritten_IONIQ6");
     let ioniq6_aussteigen = document.getElementById("aussteigen_IONIQ6");
+    let ioniq6_RWG = document.getElementById("RWG_IONIQ6");
+    let ioniq6_pGang = document.getElementById("P_IONIQ6");
     // Polestar 2 Var
     let polestar2_FZ_ein = document.getElementById("FZ_einschalten_Polestar2");
     let polestar2_tippen = document.getElementById("tippen_Polestar2");
@@ -49,6 +51,15 @@ var Soundliste;
     let EQE_tempolimit = document.getElementById("tempolimit_ueberschritten_EQE");
     let EQE_einsteigen = document.getElementById("einsteigen_EQE");
     let EQE_aussteigen = document.getElementById("aussteigen_EQE");
+    // Mein Sound Design Var
+    let MSD_FZ_ein = document.getElementById("FZ_einschalten_MSD");
+    let MSD_FZ_aus = document.getElementById("FZ_ausschalten_MSD");
+    let MSD_tippen = document.getElementById("tippen_MSD");
+    let MSD_beschleunigung_bremsung = document.getElementById("beschleunigung_bremsung_MSD");
+    let MSD_sprachassistent = document.getElementById("sprachassistent_MSD");
+    let MSD_sprachassistent_aus = document.getElementById("sprachassistent_aus_MSD");
+    let MSD_anschnallen = document.getElementById("anschnallen_MSD");
+    let MSD_benachrichtigung = document.getElementById("benachrichtigung_MSD");
     //IONIQ 6 Func
     ioniq6_FZ_ein.addEventListener("click", ioniq1);
     function ioniq1() {
@@ -121,6 +132,16 @@ var Soundliste;
     function ioniq15() {
         let ioniq15 = new Audio("IONIQ6/Aussteigen.wav");
         ioniq15.play();
+    }
+    ioniq6_RWG.addEventListener("click", ioniq16);
+    function ioniq16() {
+        let ionniq16 = new Audio("IONIQ6/RW_Gang.wav");
+        ionniq16.play();
+    }
+    ioniq6_pGang.addEventListener("click", ioniq17);
+    function ioniq17() {
+        let ionniq17 = new Audio("IONIQ6/P_Gang.wav");
+        ionniq17.play();
     }
     // Polestar 2 Func    
     polestar2_FZ_ein.addEventListener("click", polestar1);
@@ -273,6 +294,47 @@ var Soundliste;
     function EQE20() {
         let EQE20 = new Audio("EQE/Earcon_Aussteigen.wav");
         EQE20.play();
+    }
+    //Mein Sound Design Funcs
+    MSD_FZ_ein.addEventListener("click", MSD1);
+    function MSD1() {
+        let MSD1 = new Audio("Eigenes_Sound_Design/Einschaltsound.wav");
+        MSD1.play();
+    }
+    MSD_FZ_aus.addEventListener("click", MSD2);
+    function MSD2() {
+        let MSD2 = new Audio("Eigenes_Sound_Design/Ausschaltsound.wav");
+        MSD2.play();
+    }
+    MSD_tippen.addEventListener("click", MSD3);
+    function MSD3() {
+        let MSD3 = new Audio("Eigenes_Sound_Design/Tipp_Feedbacksound.wav");
+        MSD3.play();
+    }
+    MSD_beschleunigung_bremsung.addEventListener("click", MSD4);
+    function MSD4() {
+        let MSD4 = new Audio("Eigenes_Sound_Design/Beschleunigungssound.wav");
+        MSD4.play();
+    }
+    MSD_sprachassistent.addEventListener("click", MSD5);
+    function MSD5() {
+        let MSD5 = new Audio("Eigenes_Sound_Design/sprachassistentAktivieren.wav");
+        MSD5.play();
+    }
+    MSD_sprachassistent_aus.addEventListener("click", MSD6);
+    function MSD6() {
+        let MSD6 = new Audio("Eigenes_Sound_Design/sprachassistentDeaktivieren.wav");
+        MSD6.play();
+    }
+    MSD_benachrichtigung.addEventListener("click", MSD7);
+    function MSD7() {
+        let MSD7 = new Audio("Eigenes_Sound_Design/Benachrichtigungssound.wav");
+        MSD7.play();
+    }
+    MSD_anschnallen.addEventListener("click", MSD8);
+    function MSD8() {
+        let MSD8 = new Audio("Eigenes_Sound_Design/Seatbelt_Alarm.wav");
+        MSD8.play();
     }
 })(Soundliste || (Soundliste = {}));
 //# sourceMappingURL=script.js.map

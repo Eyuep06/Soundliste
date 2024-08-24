@@ -15,6 +15,8 @@ namespace Soundliste {
     let ioniq6_anruf: HTMLElement = document.getElementById("anruf_IONIQ6") as HTMLElement;
     let ioniq6_tempolimit: HTMLElement = document.getElementById("tempolimit_ueberschritten_IONIQ6") as HTMLElement;
     let ioniq6_aussteigen: HTMLElement = document.getElementById("aussteigen_IONIQ6") as HTMLElement;
+    let ioniq6_RWG: HTMLElement = document.getElementById("RWG_IONIQ6") as HTMLElement;
+    let ioniq6_pGang: HTMLElement = document.getElementById("P_IONIQ6") as HTMLElement;
     // Polestar 2 Var
     let polestar2_FZ_ein: HTMLElement = document.getElementById("FZ_einschalten_Polestar2") as HTMLElement;
     let polestar2_tippen: HTMLElement = document.getElementById("tippen_Polestar2") as HTMLElement;
@@ -47,6 +49,15 @@ namespace Soundliste {
     let EQE_tempolimit: HTMLElement = document.getElementById("tempolimit_ueberschritten_EQE") as HTMLElement;
     let EQE_einsteigen: HTMLElement = document.getElementById("einsteigen_EQE") as HTMLElement;
     let EQE_aussteigen: HTMLElement = document.getElementById("aussteigen_EQE") as HTMLElement;
+    // Mein Sound Design Var
+    let MSD_FZ_ein: HTMLElement = document.getElementById("FZ_einschalten_MSD") as HTMLElement;
+    let MSD_FZ_aus: HTMLElement = document.getElementById("FZ_ausschalten_MSD") as HTMLElement;
+    let MSD_tippen: HTMLElement = document.getElementById("tippen_MSD") as HTMLElement;
+    let MSD_beschleunigung_bremsung: HTMLElement = document.getElementById("beschleunigung_bremsung_MSD") as HTMLElement;
+    let MSD_sprachassistent: HTMLElement = document.getElementById("sprachassistent_MSD") as HTMLElement;
+    let MSD_sprachassistent_aus: HTMLElement = document.getElementById("sprachassistent_aus_MSD") as HTMLElement;
+    let MSD_anschnallen: HTMLElement = document.getElementById("anschnallen_MSD") as HTMLElement;
+    let MSD_benachrichtigung: HTMLElement = document.getElementById("benachrichtigung_MSD") as HTMLElement;
    
     //IONIQ 6 Func
     ioniq6_FZ_ein.addEventListener("click", ioniq1);
@@ -162,6 +173,22 @@ namespace Soundliste {
     function ioniq15(): void {
         let ioniq15: HTMLAudioElement = new Audio ("IONIQ6/Aussteigen.wav");
         ioniq15.play();
+    }
+
+
+    ioniq6_RWG.addEventListener ("click", ioniq16);
+
+    function ioniq16(): void {
+        let ionniq16: HTMLAudioElement = new Audio ("IONIQ6/RW_Gang.wav")
+        ionniq16.play();
+    }
+
+
+    ioniq6_pGang.addEventListener ("click", ioniq17);
+
+    function ioniq17(): void {
+        let ionniq17: HTMLAudioElement = new Audio ("IONIQ6/P_Gang.wav")
+        ionniq17.play();
     }
 
 
@@ -408,5 +435,68 @@ namespace Soundliste {
     }
 
 
- 
+    //Mein Sound Design Funcs
+    MSD_FZ_ein.addEventListener("click", MSD1)
+    
+    function MSD1(): void {
+        let MSD1: HTMLAudioElement = new Audio ("Eigenes_Sound_Design/Einschaltsound.wav");
+        MSD1.play();
+    }
+
+    
+    MSD_FZ_aus.addEventListener("click", MSD2)
+
+    function MSD2(): void {
+        let MSD2: HTMLAudioElement = new Audio ("Eigenes_Sound_Design/Ausschaltsound.wav")
+        MSD2.play();
+    }
+
+
+    MSD_tippen.addEventListener("click", MSD3)
+
+    function MSD3(): void {
+        let MSD3: HTMLAudioElement = new Audio ("Eigenes_Sound_Design/Tipp_Feedbacksound.wav")
+        MSD3.play();
+    }
+
+
+    MSD_beschleunigung_bremsung.addEventListener("click", MSD4)
+
+    function MSD4(): void {
+        let MSD4: HTMLAudioElement = new Audio ("Eigenes_Sound_Design/Beschleunigungssound.wav")
+        MSD4.play();
+    }
+
+
+    MSD_sprachassistent.addEventListener("click", MSD5)
+
+    function MSD5(): void {
+        let MSD5: HTMLAudioElement = new Audio ("Eigenes_Sound_Design/sprachassistentAktivieren.wav")
+        MSD5.play();
+    }
+
+
+    MSD_sprachassistent_aus.addEventListener("click", MSD6)
+
+    function MSD6(): void {
+        let MSD6: HTMLAudioElement = new Audio ("Eigenes_Sound_Design/sprachassistentDeaktivieren.wav")
+        MSD6.play();
+    }
+
+
+    MSD_benachrichtigung.addEventListener("click", MSD7)
+
+    function MSD7(): void {
+        let MSD7: HTMLAudioElement = new Audio ("Eigenes_Sound_Design/Benachrichtigungssound.wav")
+        MSD7.play();
+    }
+
+
+    MSD_anschnallen.addEventListener("click", MSD8)
+
+    function MSD8(): void {
+        let MSD8: HTMLAudioElement = new Audio ("Eigenes_Sound_Design/Seatbelt_Alarm.wav")
+        MSD8.play();
+    }
+
 }
